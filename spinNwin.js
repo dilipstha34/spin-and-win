@@ -64,7 +64,7 @@ const getNumberOfLines = () => {
     }
 };
 
-
+// 3. Collect a bet amount
 
 const getBet = (balance, lines) => {
     while(true) {
@@ -81,6 +81,8 @@ const getBet = (balance, lines) => {
         }
     }
 }
+
+// 4. Spin the slot machine
 
 const spin = () => {
     const symbols = [];
@@ -137,6 +139,8 @@ const printRows = (rows) => {
     }
 };
 
+// 5. Check if the player won
+
 const getWinnings = (rows, bet, lines) => {
     let winnings = 0;
     for(let row = 0; row < lines; row++)
@@ -160,9 +164,13 @@ const getWinnings = (rows, bet, lines) => {
     return winnings;
 };
 
+// 6. give the user their winnings
+
 const game = () => {
     let balance = deposit();
 
+    // 7. Play again
+    
     while(true)
     {
         console.log("You have a balace of $" + balance.toString());
