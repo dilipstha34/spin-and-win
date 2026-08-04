@@ -37,14 +37,14 @@ A simple command-line Slot Machine game built with Node.js where players deposit
 ## Running the Project
 
 ```bash
-node index.js
+node spinNwin.js
 ```
 
 ## Project Structure
 
 ```
 slot-machine/
-├── index.js
+├── spinNwin.js
 ├── package.json
 ├── package-lock.json
 └── README.md
